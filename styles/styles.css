@@ -777,6 +777,7 @@ pre code {
 
 .offset-1 {
   margin-left: 8.3333333333%;
+  margin-right: 8.3333333333%;
 }
 
 .offset-2 {
@@ -6165,6 +6166,10 @@ button.bg-dark:focus {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-grey {
+  background-color: #a8a8a880;
 }
 
 .bg-transparent {
