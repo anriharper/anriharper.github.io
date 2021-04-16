@@ -44,6 +44,52 @@
 
     </section>
 
+    <section class='page-section offset-1' id='client-design'>
+        <h1> CSCI-4208 Final Project Client Design </h1>
+        <h6> Posted April 16, 2021 </h6>
+        <br>
+
+        <p class='font-weight-bold'> Client Logic: </p>
+        <p> JavaScript's logic and data processing responsibilities will include the following features: </p>
+        <ul>
+            <li> 
+                <b>User Authentication:</b> JS will allow the user to log in with a username and password as well as 
+                have an email connected to the account. Similar to Lab 12, will will use Passport, EJS, Bcrypt in order 
+                to accomplish user authentication. 
+            </li>
+
+            <li><b>Messaging:</b> JS will process the data from users participating in conversations.</li>
+        </ul>
+
+        <p class='font-weight-bold'> Server Fetches: </p>
+        <p> All expected server requests will include the following: </p>
+        <ul>
+            <li> <b> Register: </b> POST user information into database to be fetched at sign-in </li>
+            <li> <b> Log-in: </b> Use client’s input to GET account from database, if credentials are correct. </li>
+            <li> <b> Friend Requests: </b> POST a friend request that is sent to the target account. They can accept or deny the request. </li>
+            <li> <b> Chat: </b> POST and GET messages, dependent on if the client sent a message or received a message from another user. </li>
+        </ul>
+
+        <p class='font-weight-bold'> Tooling and Libraries: </p>
+        <p> All external tools and libraries used are as follows: </p>
+        <ul>
+            <li> CSS </li>
+            <li> Javascript </li>
+            <li> JSON </li>
+            <li> HTML </li>
+            <li> Bootstrap </li>
+            <li> Bcrypt </li>
+            <li> EJS </li>
+            <li> Passport </li>
+        </ul>
+
+        <div class='text-center align-items-center'>
+            <img class='img-fluid' src='assets/projects/chat/mockups.png'>
+        </div>
+    </section>
+
+    <hr>
+
     <section class='page-section offset-1' id='pokemon-search'>
         <h1> <a href='https://anriharper.com/pokemon-search/'>Pokémon Search</a> </h1>
         <h6> Posted April 12, 2021 </h6>
@@ -56,9 +102,7 @@
             name, ID, and the animated sprites the Pokémon used in Pokémon Black Version and Pokémon White Version (2011). 
             While the API has data for all Pokémon through Generation VIII, it only has the sprites available for 
             Generation I through V.  
-        </p>
-
-        
+        </p>        
     </section>
 
     <hr>
