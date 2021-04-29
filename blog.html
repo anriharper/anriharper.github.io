@@ -44,6 +44,75 @@
 
     </section>
 
+    <section class='page-section offset-1' id='server-design'>
+        <h1> CSCI-4208 Final Project Server Design </h1>
+        <h6> Posted April 23, 2021 </h6>
+        <br>
+
+        <p class='font-weight-bold'> REST API: </p>
+        <table class='table-bordered'>
+            <tr>
+                <td> Route </td>
+                <td> Method </td>
+                <td> Description </td>
+            </tr>
+            <tr>
+                <td> /api/chat/new </td>
+                <td> GET </td>
+                <td> <b>New message</b>: Creates a new message to send to a user  </td>
+            </tr>
+            <tr>
+                <td> /api/chat/view </td>
+                <td> GET </td>
+                <td> <b>Chats</b>: Gets all the conversations the user has had with other users </td>
+            </tr>
+            <tr>
+                <td> /api/chat/view/user </td>
+                <td> GET </td>
+                <td> <b>Profiles</b>: Gets the other user's profile information </td>
+            </tr>
+            <tr>
+                <td> /api/chat/home </td>
+                <td> GET </td>
+                <td> <b>Homepage</b>: Gets the current status of friends list (online or offline); 
+                    displays if you have had a previous conversation with them as well </td>
+            </tr>
+        </table>
+
+        <p class='font-weight-bold'> Server Logic: </p>
+        <p>
+            The user will register with a username and password that the server will store, redirecting the user to a login 
+            screen where they will be able to login (and not register again), which will then redirect them to the home 
+            location (homepage of the app) to see their data. When chatting with another user, the server will transport 
+            and display the messages using a socket connection. 
+        </p>
+
+        <p class='font-weight-bold'> Server Fetches: </p>
+        <p>
+            The user will register using POST which allows the user information to be fetched from the database at 
+            sign-in. When logging in and whether they entered the correct login information, the user will enter their 
+            credentials in order to GET access their account from the database. The user will have friends, therefore 
+            friend requests will be available. Using POST the friend request will be sent to the targeted account allowing 
+            them to accept or deny the request. After the login process is completed and friend requests have been accepted 
+            the user will be able to chat amongst friends and different groups. The chatting process will use POST to send 
+            messages and GET will be used so the recipient can read the sent messages.
+        </p>
+        
+        <p class='font-weight-bold'> Tooling and Libraries </p>
+        <p> All external tools and libraries used are as follows: </p>
+        <ul class='ul-columns-2'>
+            <li> Express </li>
+            <li> Passport </li>
+            <li> Bcrypt </li>
+            <li> Socket.io </li>
+            <li> JSON </li>
+            <li> JavaScript </li>
+            <li> WebSocket </li>
+        </ul>
+    </section>
+
+    <hr>
+
     <section class='page-section offset-1' id='client-design'>
         <h1> CSCI-4208 Final Project Client Design </h1>
         <h6> Posted April 16, 2021 </h6>

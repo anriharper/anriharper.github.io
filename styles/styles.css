@@ -1675,6 +1675,9 @@ pre code {
   vertical-align: top;
   border-top: 0.125rem solid #dee2e6;
 }
+th, td {
+  padding:10px;
+}
 .table thead th {
   vertical-align: bottom;
   border-bottom: 0.25rem solid #dee2e6;
@@ -1693,7 +1696,7 @@ pre code {
 }
 .table-bordered th,
 .table-bordered td {
-  border: 0.125rem solid #dee2e6;
+  border: 0.15rem solid #dee2e6;
 }
 .table-bordered thead th,
 .table-bordered thead td {
@@ -10259,4 +10262,10 @@ form .row:first-child .floating-label-form-group {
   width: 320px;
   margin: 0 auto;
   text-align:center;
+}
+
+.ul-columns-2 {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
